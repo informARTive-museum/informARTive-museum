@@ -1,1 +1,10 @@
+# basic options
+title: The InformARTive Museum
+author: Pauline Yue, Elizabeth Zhou, Hannah Choi, & Joshua Lin
+email: jtlin@berkeley.edu
+description: A virtual data-centric art museum
+github_username: myconsonance
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-architect
