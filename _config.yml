@@ -8,3 +8,4 @@ github_username: myconsonance
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
+show_downloads: true
