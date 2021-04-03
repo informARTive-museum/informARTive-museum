@@ -2,8 +2,33 @@
 layout: default
 ---
 
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
   <body>
-    We invite you to experience the immersive virtual museum centered on the data that surrounds art! We are UC Berkeley 5th Year MIDS students producing this website as part of our Data Visualization group project.
+    <section class="page-header">
+      <h1 class="project-name">The InformARTive Museum</h1>
+      <h2 class="project-tagline">A Virtual Data-Centric Art Museum</h2>
+      {% for page in site.pages %}
+        <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
+      {% endfor %}
+    </section>
+
+    <section class="main-content">
+      
+        We invite you to experience the immersive virtual museum centered on the data that surrounds art! We are UC Berkeley 5th Year MIDS students producing this website as part of our Data Visualization group project.
+
+    </section>
+
+  
   </body>
 </html>
+
